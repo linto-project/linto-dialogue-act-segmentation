@@ -8,7 +8,6 @@ Created on Mon Jan  4 10:08:14 2021
 
 
 def get_sec(time_str):
-	# BONJOUR JE MAPPELLE LILA
     h, m, s = time_str.split(':')
     return float(h) * 3600 + float(m) * 60 + float(s)
 
