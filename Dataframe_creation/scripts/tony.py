@@ -8,13 +8,13 @@ Created on Fri Dec 18 14:20:23 2020
 
 import os
 
-def data_prep_tony(name, word, rank_round, text_round):
+def data_prep_tony(name, word, rank_turn, text_turn):
     name_tony=os.path.splitext(name)[0]
     name_tony2=os.path.basename(name_tony)
     file_tony=open(name_tony2+"_tony_prep.txt","w")
     cmpt=0
     for i in range(0,len(word)):
-        if rank_round==0:
+        if rank_turn==0:
             cmpt=0
             file_tony.write("\n")
             cmpt+=1

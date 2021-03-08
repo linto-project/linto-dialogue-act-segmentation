@@ -30,17 +30,17 @@ def alignments_word_extraction(filename_alignments):
     return  word_list, beg_word, end_word
 
 # ne fonctionne que pour les alignements générés à partir de Jtrans.
-def alignments_real_round_extraction(filename_alignments):
+def alignments_real_turn_extraction(filename_alignments):
     #lecture fichier
     file=open(filename_alignments, "r")
     lines=file.readlines()
     file.close()
     
-    text_round=[]
-    beg_round=[]
-    end_round=[]
-    n_round=[]
-    rank_round=[]
+    text_turn=[]
+    beg_turn=[]
+    end_turn=[]
+    n_turn=[]
+    rank_turn=[]
     loc=[]
 
     l=lines[0].split(" ")
@@ -59,36 +59,36 @@ def alignments_real_round_extraction(filename_alignments):
         
         if l_comp!=l_tamp:
             n+=1
-            n_round.append(n)
+            n_turn.append(n)
             rnd_str=" ".join(rnd)
             
-            beg_round+=[beg]*len(rnd)
-            end_round+=[float(l[1])]*len(rnd)
+            beg_turn+=[beg]*len(rnd)
+            end_turn+=[float(l[1])]*len(rnd)
             beg=float(l[1])
-            text_round+=[rnd_str]*len(rnd)
+            text_turn+=[rnd_str]*len(rnd)
             l_tamp=l_comp
             rnd=[]
             rnd.append(word)
 
             cmpt=0
-            rank_round.append(cmpt)
+            rank_turn.append(cmpt)
 
             cmpt+=1
         else:
             rnd.append(word)
-            rank_round.append(cmpt)
+            rank_turn.append(cmpt)
             cmpt+=1
-            n_round.append(n)
+            n_turn.append(n)
             
 
 
 
     rnd_str=" ".join(rnd)
     
-    beg_round+=[beg]*len(rnd)
-    end_round+=[float(l[2])]*len(rnd)
-    text_round+=[rnd_str]*len(rnd)
+    beg_turn+=[beg]*len(rnd)
+    end_turn+=[float(l[2])]*len(rnd)
+    text_turn+=[rnd_str]*len(rnd)
 
-    print(len(n_round), len(beg_round), len(end_round), len(rank_round), len(text_round))
+    print(len(n_turn), len(beg_turn), len(end_turn), len(rank_turn), len(text_turn))
     
-    return n_round, beg_round, end_round, rank_round, text_round, loc
+    return n_turn, beg_turn, end_turn, rank_turn, text_turn, loc
