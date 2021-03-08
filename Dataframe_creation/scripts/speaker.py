@@ -31,8 +31,8 @@ def read_change_spk(filename_change_spk_detection):
         l=line.split(" ")
 
         #print(l)
-        beg_chg_spk.append(turn(get_sec(l[0]),3))
-        end_chg_spk.append(turn(get_sec(l[1]),3))
+        beg_chg_spk.append(round(get_sec(l[0]),3))
+        end_chg_spk.append(round(get_sec(l[1]),3))
         
     return beg_chg_spk, end_chg_spk
 
