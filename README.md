@@ -15,7 +15,7 @@ Then the jupyter notebooks decribe each step in the process so let them guide yo
 
 ### Prerequisites
 
-Specific Python packages needed for the use of the jupyter notebook : 
+Specific Python packages needed to use jupyter notebooks : 
 * spacy : _conda install -c conda-forge spacy_ and _python -m spacy download fr_core_news_sm_
 * snorkel : _pip install snorkel_
 
