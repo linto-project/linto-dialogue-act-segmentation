@@ -52,7 +52,7 @@ are performed step by step in this notebook.
 
 ## Usage 
 
-### Get labeled data from the generative model using pre-processed data from LinTo**
+### Get labeled data from the generative model using pre-processed data from LinTo
 
 To obtain the predictions of the generative model from the pre-processed data of the LinTo corpus, the following steps must be followed: 
 
