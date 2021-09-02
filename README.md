@@ -50,9 +50,9 @@ are performed step by step in this notebook.
 ```
 
 
-### Usage 
+## Usage 
 
-**Get labeled data from the generative model using pre-processed data from LinTo**
+### Get labeled data from the generative model using pre-processed data from LinTo**
 
 To obtain the predictions of the generative model from the pre-processed data of the LinTo corpus, the following steps must be followed: 
 
@@ -67,7 +67,7 @@ The generative model's performances are calculated inside the notebook.
 
 At the end of the notebook, some files are generated : they contain all the data automatically labeled by Snorkel thanks to the written rules. They are under a format suited for training, fine-tuning and testing of the written discourse segmenter **ToNy**.
 
-**Preprocessing task**
+### Preprocessing task
 
 To generate the table needed for the training and testing of the generative model, one must use the jupyter notebook _Dataframe_creation_dialogue_act.ipynb_ in the folder _Dataframe_creation/_. At the beginning of this notebook there is an inventory of all the necessary files and their formats for the creation of the final table.
 Once you get the final table, you can use the notebook _Snorkel_Linto.ipynb_ as explained above. 
