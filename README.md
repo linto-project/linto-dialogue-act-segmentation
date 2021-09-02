@@ -5,7 +5,7 @@ This work was done in the framework of the LinTo project https://linto.ai/fr/ .
 The objective is to segment French spontaneous speech into dialogue acts. 
 For this purpose, a corpus of Linagora meetings has been designed. 
 We decided to automatically annotate the corpus using the Snorkel tool: https://www.snorkel.org/.  
-The output files are the labeled data which can be used to train a machine learning model (for example ToNy)
+The output files are the labeled data which can be used to train a machine learning model (for example ToNy  https://zenodo.org/record/4235850#.YTC-et86-w4 , https://gitlab.inria.fr/andiamo/tony)
 This directory contains all the data that were used to annotate the corpus with Snorkel, as well as the jupyter notebooks for processing the data and generating the labels. 
 
 ## Getting Started
@@ -66,7 +66,7 @@ df_linto = pd.read_csv("../data/df_all_final_LinTo_23032021.csv")
 The steps for the creation of this generative model are well separated in this notebook, the rules used for Snorkel are written in the notebook directly, and for some of them are to be completed from the scripts in _Snorkel_work/utils/utils_snorkel_linto.py_
 The generative model's performances are calculated inside the notebook.
 
-At the end of the notebook, some files are generated : they contain all the data automatically labeled by Snorkel thanks to the written rules. They are under a format suited for training, fine-tuning and testing of the written discourse segmenter **ToNy**.
+At the end of the notebook, some files are generated : they contain all the data automatically labeled by Snorkel thanks to the written rules. They are under a format suited for training, fine-tuning and testing of the written discourse segmenter **ToNy** https://gitlab.inria.fr/andiamo/tony.
 
 ### Preprocessing task
 
