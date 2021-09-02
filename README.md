@@ -61,6 +61,7 @@ To obtain the predictions of the generative model from the pre-processed data of
 ```
 df_linto = pd.read_csv("../data/df_all_final_LinTo_23032021.csv")
 ```
+3. Get the files generated at the end of the notebook : they contain the automatically labeled data separated in train/dev/test.
 
 The steps for the creation of this generative model are well separated in this notebook, the rules used for Snorkel are written in the notebook directly, and for some of them are to be completed from the scripts in _Snorkel_work/utils/utils_snorkel_linto.py_
 The generative model's performances are calculated inside the notebook.
@@ -74,7 +75,7 @@ Once you get the final table, you can use the notebook _Snorkel_Linto.ipynb_ as 
 
 1. Unzip the _data.zip_ into _Dataframe_creation/_
 2. Run the cells of the _Dataframe_creation_dialogue_act.ipynb_
-
+3. Get the table generated at the end of the notebook, it contains all information needed for the training of the generative model.
 
 ## Authors
 
