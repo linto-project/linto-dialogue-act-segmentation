@@ -1,7 +1,7 @@
 # DialogueActsSegmentation_Linto
 
 
-This work was done in the framework of the LinTo project https://linto.ai/fr/ .
+This work was done in the framework of the LinTo project https://labs.linagora.com/linto/.
 The objective is to segment French spontaneous speech into dialogue acts. 
 For this purpose, a corpus of Linagora meetings has been designed. 
 We decided to automatically annotate the corpus using the Snorkel tool: https://www.snorkel.org/.  
